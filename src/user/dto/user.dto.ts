@@ -5,3 +5,5 @@ export type UserDto = {
   password: string;
   createdAt?: Date;
 };
+
+export type CreateUserDto = Omit<UserDto, 'id' | 'createdAt'>;
